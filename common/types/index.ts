@@ -9,7 +9,7 @@ export enum Layout {
 
 export enum Network {
   MAINNET = 'ethereum',
-  GOERLI = 'goerli',
+  // GOERLI = 'goerli',
   OPTIMISM = 'optimism',
   POLYGON = 'polygon',
   ARBITRUM = 'arbitrum',
@@ -46,7 +46,7 @@ export interface Claim {
 }
 
 export enum CurrencyChain {
-  'Goerli Ether' = Network.GOERLI,
+  // 'Goerli Ether' = Network.GOERLI,
   'Ether' = Network.MAINNET,
   'MATIC' = Network.POLYGON,
 }

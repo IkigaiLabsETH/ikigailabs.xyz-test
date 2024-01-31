@@ -11,13 +11,6 @@ export const URLS = {
     explorer: 'https://etherscan.io',
     openzeppelin: '',
   },
-  [Network.GOERLI]: {
-    reservoir: 'https://api-goerli.reservoir.tools',
-    tw: '',
-    alchemy: 'https://eth-goerli.g.alchemy.com',
-    explorer: 'https://goerli.etherscan.io',
-    openzeppelin: '',
-  },
   [Network.POLYGON]: {
     reservoir: 'https://api-polygon.reservoir.tools',
     tw: '',
@@ -97,12 +90,6 @@ export const COLLECTIONS = {
     {
       id: 'be442cf7f246d8300544f092296c39f0986b5fd86959820edca867c751715125',
       name: 'Degens',
-    },
-  ],
-  [Network.GOERLI]: [
-    {
-      id: 'a85336cbd06421c67cefe53cd16b1f3dc4d340eaed6680a433279027005aa614',
-      name: 'Curated',
     },
   ],
   [Network.POLYGON]: [

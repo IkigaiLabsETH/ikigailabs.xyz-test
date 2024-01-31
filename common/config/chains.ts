@@ -1,5 +1,5 @@
-import { Ethereum, Goerli, Polygon, Arbitrum, ArbitrumGoerli, Mumbai } from '@thirdweb-dev/chains'
-import { arbitrum, mainnet, polygon, optimism, Chain, bsc, polygonMumbai } from 'wagmi/chains'
+import { Ethereum, Polygon, Arbitrum, ArbitrumGoerli, Mumbai } from '@thirdweb-dev/chains'
+import { arbitrum, mainnet, polygon, optimism, Chain, polygonMumbai } from 'wagmi/chains'
 
 //CONFIGURABLE: The default export controls the supported chains for the marketplace. Removing
 // or adding chains will result in adding more or less chains to the marketplace.
@@ -97,18 +97,6 @@ export const supportedChains = [
     collectionSetId: process.env.NEXT_PUBLIC_OPTIMISM_COLLECTION_SET_ID,
     community: process.env.NEXT_PUBLIC_OPTIMISM_COMMUNITY,
   },
-  {
-    ...bsc,
-    lightIconUrl: '/icons/bsc-icon-dark.svg',
-    darkIconUrl: '/icons/bsc-icon-light.svg',
-    reservoirBaseUrl: 'https://api-bsc.reservoir.tools',
-    proxyApi: '/api/reservoir/bsc',
-    routePrefix: 'bsc',
-    apiKey: process.env.BSC_RESERVOIR_API_KEY,
-    coingeckoId: 'binancecoin',
-    collectionSetId: process.env.NEXT_PUBLIC_BSC_COLLECTION_SET_ID,
-    community: process.env.NEXT_PUBLIC_BSC_COMMUNITY,
-  },
 ] as ReservoirChain[]
 
-export const TW_SUPPORTED_CHAINS = [Ethereum, Goerli, Polygon, Arbitrum, ArbitrumGoerli, Mumbai] as any
+export const TW_SUPPORTED_CHAINS = [Ethereum, Polygon, Arbitrum, ArbitrumGoerli, Mumbai] as any

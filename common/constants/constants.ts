@@ -15,10 +15,6 @@ export const NETWORK_OPTIONS = [
     name: 'Ethereum',
   },
   {
-    id: 'goerli',
-    name: 'Goerli',
-  },
-  {
     id: 'polygon',
     name: 'Polygon',
   },
